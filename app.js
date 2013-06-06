@@ -81,7 +81,7 @@ fs.watch('./public/images/klf', function(event, filename) {
 		}
 		// rebuild the player list in case any new players have posted
 		// a screenshot
-		global_klf_users = getUniqueSubstrings(global_files, timestamp_len);
+		global_klf_users = getUniqueSubstrings(global_files, global_timestamp_len);
 	}
 });
 
