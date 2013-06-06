@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	h1= title
+	
+	table
+		each file in userfiles
+			tr
+				td
+					img(src='/images/klf/' + file)

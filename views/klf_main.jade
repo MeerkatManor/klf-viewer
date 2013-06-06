@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	
+	table
+		each user in global_klf_users
+			tr
+				td
+					a(href='klf/'+user) #{user}
